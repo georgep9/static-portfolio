@@ -3,11 +3,8 @@ const AboutMe = () => {
   return (
     <div>
       <main>
-        <h1>
-          About Me
-        </h1>
         <h2>
-          Software Developer & Engineer
+          Software Engineer
         </h2>
         <p>
           My passion and interest for technology, and how we use it to create solutions on top of existing accomplishments, continues to motivate me as a software engineer. Developing technology to improve the productivity and quality of everyday life.
