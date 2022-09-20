@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React, { ReactNode } from "react";
-import Image from 'next/image'
 
 interface Props {
     children?: ReactNode
@@ -18,7 +17,7 @@ export const Header = () => {
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <Link href="/">
-                <a className="nav-link">About Me  ☕</a>
+                <a className="nav-link">About Me ☕</a>
               </Link>
             </li>
             <li className="nav-item">
