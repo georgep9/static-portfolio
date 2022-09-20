@@ -4,7 +4,6 @@ import '../styles/bootstrap.min.css'
 
 interface Props {
   Component: NextComponentType
-  // any props that come into the component
 }
 
 function MyApp({Component, ...props} : Props) {
