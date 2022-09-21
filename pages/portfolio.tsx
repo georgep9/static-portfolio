@@ -4,11 +4,11 @@ import Layout from '../components/layout/Layout'
 
 const Porfolio: NextPage = () => {
   return (
-    <div>
+    <>
       <Layout>
         <PortfolioContent />
       </Layout>
-    </div>
+    </>
   )
 }
 

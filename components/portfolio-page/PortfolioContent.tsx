@@ -1,3 +1,4 @@
+import { NextPage } from "next"
 import Academia, { AcademiaEntry } from "./Academia"
 
 const qut : AcademiaEntry = {
@@ -27,13 +28,11 @@ const qut : AcademiaEntry = {
   }]
 }
 
-const PortfolioContent = () => {
+const PortfolioContent : NextPage = (props) => {
   return (
-    <div>
-      <h3>Current skills</h3>
-      <h3>Notable projects</h3>
+    <>
       <Academia {...qut}/>
-    </div>
+    </>
   )
 }
 

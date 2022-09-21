@@ -1,14 +1,15 @@
 import type { NextPage } from 'next'
-import Layout from '../components/layout/Layout'
 import AboutMe from '../components/index-page/AboutMe'
+import Layout from '../components/layout/Layout'
+import NavBar from '../components/layout/NavBar'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Layout>
         <AboutMe />
       </Layout>
-    </div>
+    </>
   )
 }
 

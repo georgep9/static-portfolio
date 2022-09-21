@@ -30,7 +30,6 @@ export type AcademiaEntry = {
 const Academia = (entry: AcademiaEntry) => {
     return (
         <>
-        <div>
             <h3>Academia</h3>
             {entry.education?.map((edu, index) => (
                 <div key={index}>
@@ -60,7 +59,6 @@ const Academia = (entry: AcademiaEntry) => {
                     &emsp;&emsp;{res.project.description}
                 </div>
             ))}
-        </div>
         </>
     )
 }
