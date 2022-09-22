@@ -1,30 +1,8 @@
+import { Education, Research } from "../commons/types"
 
 export type AcademiaEntry = {
-    education?: {
-        institution: {
-            fullname: String
-            shortname?: String,
-        }
-        course: {
-            fullname: String,
-            level?: String
-            major?: String
-            minors?: String[]
-        }
-        grade?: String,
-        description?: String
-    }[]
-    research?: {
-        institution: {
-            fullname: String
-            shortname?: String,
-        },
-        project: {
-            title: String,
-            description?: String
-        },
-        type: String
-    }[]
+    education?: Education[]
+    research?: Research[]
 }
 
 const Academia = (entry: AcademiaEntry) => {
@@ -47,7 +25,7 @@ const Academia = (entry: AcademiaEntry) => {
                     )) : null}
                     &emsp;&emsp;{(edu.grade) ? (
                         <>
-                            <small className="text-muted">Grade: </small>{edu.grade}<br></br>
+                            <small className="text-muted">GPA: </small>{edu.grade}<br></br>
                         </>
                     ) : null}
                 </div>

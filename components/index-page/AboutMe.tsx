@@ -4,7 +4,7 @@ const AboutMe : NextPage = (props) => {
   return (
     <>
       <h3>
-        George Patterson - <small className="text-primary">Graduate Engineer</small>
+        George Patterson - <small className="text-primary">Software Engineer</small>
       </h3>
       <p>
         My passion and interest for technology, and how we use it to create solutions on top of existing accomplishments, continues to motivate me as a software engineer. Developing code to improve the productivity and quality of everyday life.
