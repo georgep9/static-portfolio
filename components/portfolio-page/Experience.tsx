@@ -11,7 +11,7 @@ const Experience = (entry: ExperienceEntry) => {
         {entry.experiences?.map((exp, index) => {
             return (
                 <>
-                <h4 className="text-primary" key={index}>{exp.org.shortname}&emsp;<small key={index} className="text-muted">({exp.org.fullname})</small></h4>
+                <h4 className="text-primary" key={index}><b>{exp.org.shortname}</b>&emsp;&emsp;<small key={index} className="text-muted">({exp.org.fullname})</small></h4>
                 <h5>&emsp;{exp.title}</h5>
                 <p>&emsp;&emsp;{exp.description}</p>
                 </>
