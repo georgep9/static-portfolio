@@ -10,6 +10,10 @@ const experiences : ExperienceEntry = {
       shortname: "IDU"
     },
     title: "Junior Software Developer",
+    period: {
+      start: new Date("2022-07"),
+      end: new Date("2022-09")
+    },
     description: "Full-stack development and debugging of features for a suite of real-time ID scanning solutions. AWS lead in provisioning and migrating SaaS from Google's firebase to AWS. Collaborating with key stake-holders in handover process for vertical software."
   },
   {
@@ -18,6 +22,10 @@ const experiences : ExperienceEntry = {
       shortname: "CSI"
     },
     title: "Graduate Blockchain Protocol Engineer",
+    period: {
+      start: new Date("2021-12"),
+      end: new Date("2022-06")
+    },
     description: "Graduate responsible for maintaining and developing features around blockchain protocol algorithms and cryptographic signing modules. These are used to support ConsenSys' enterprise friendly Ethereum clients Besu and Teku."
   },
   {
@@ -26,6 +34,10 @@ const experiences : ExperienceEntry = {
       shortname: "CSG"
     },
     title: "Intern Developer",
+    period: {
+      start: new Date("2021-06"),
+      end: new Date("2021-11")
+    },
     description: "Developing and supporting the provision of AWS micro-services for the SaaS platform Ascendon, a cloud-native solution for real-time online charging. Previously a winter intern, refactoring scripts for the infrastructure support team to improve performances and provide features for internal software."
   },
   {
@@ -34,6 +46,10 @@ const experiences : ExperienceEntry = {
       shortname: "QUT"
     },
     title: "Sessional Academic",
+    period: {
+      start: new Date("2021-03"),
+      end: new Date("2021-06")
+    },
     description: "Academic tutor for software engineering honours course Embedded Systems (EGH456)."
   },
   {
@@ -42,6 +58,10 @@ const experiences : ExperienceEntry = {
       shortname: "CASG"
     },
     title: "Undergraduate Engineer",
+    period: {
+      start: new Date("2020-12"),
+      end: new Date("2021-02")
+    },
     description: "Researched and presented strategies to support Navy hydrographic capability to address and mitigate the threats associated with the rapidly evolving landscape of cybersecurity"
   }]
 }

@@ -1,4 +1,6 @@
 import { Education, Research } from "../commons/types"
+import styles from './portfolio.module.css';
+import { monthNames } from "../commons/types";
 
 export type AcademiaEntry = {
     education?: Education[]
@@ -10,10 +12,10 @@ const Academia = (entry: AcademiaEntry) => {
         <>
             <h3>Academia</h3>
             {entry.education?.map((edu, index) => (
-                <div key={index}>
-                    <h4 className="text-primary">{edu.institution.fullname} ({edu.institution.shortname})</h4>
+                <div key={index} className={styles.container}>
+                    <h4 className="text-primary"><b>{edu.institution.fullname} ({edu.institution.shortname})</b></h4>
                     <h5>
-                        &emsp;{edu.course.fullname} {(edu.course.level) ? <small key={index} className="text-muted">[{edu.course.level}]</small> : null}
+                        &emsp;{edu.course.fullname}&emsp;{(edu.course.level) ? <small key={index} className="text-muted">[{edu.course.level}]</small> : null}
                     </h5>
                     &emsp;&emsp;<small className="text-muted">Major: </small><br></br>
                     &emsp;&emsp;&emsp;{edu.course.major}<br></br>
@@ -31,8 +33,8 @@ const Academia = (entry: AcademiaEntry) => {
                 </div>
             ))}
             {entry.research?.map((res, index) => (
-                <div key={index}>
-                    <h4 className="text-primary">{res.project.title} <small key={index} className="text-muted">[{res.type}]</small></h4>
+                <div key={index} className={styles.container}>
+                    <h4 className="text-primary"><b>{res.project.title}</b>&emsp;<small key={index} className="text-muted">[{res.type}]</small></h4>
                     <h5>&emsp;{res.institution.fullname} ({res.institution.shortname})</h5>
                     &emsp;&emsp;{res.project.description}
                 </div>
