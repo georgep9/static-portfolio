@@ -93,7 +93,7 @@ const qut : AcademiaEntry = {
   }]
 }
 
-const PortfolioContent : NextPage = (props) => {
+const PortfolioContent : NextPage = () => {
   return (
     <>
       <Experience {...experiences}/>

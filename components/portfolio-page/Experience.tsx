@@ -1,5 +1,5 @@
 import { Experience } from "../commons/types"
-import styles from './portfolio.module.css';
+import styles from '../layout.module.css';
 import { monthNames } from "../commons/types";
 
 export type ExperienceEntry = {
@@ -13,8 +13,8 @@ const Experience = (entry: ExperienceEntry) => {
         {entry.experiences?.map((exp, index) => {
             return (
                 <>
-                <div className={styles.container}>
-                    <h4 className="text-primary" key={index}>
+                <div className={styles.buttonContainer} key={index}>
+                    <h4 className="text-primary">
                         <b>{exp.org.shortname}</b>&emsp;
                         <small key={index} className="text-muted"><b>{exp.org.fullname}</b></small>
                     </h4> 
