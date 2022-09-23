@@ -1,32 +1,40 @@
 import { Experience } from "../commons/types"
-import styles from '../layout.module.css';
 import { monthNames } from "../commons/types";
+import ButtonLayout from "../layout/ButtonLayout";
 
 export type ExperienceEntry = {
     experiences: Experience[]
 }
 
 const Experience = (entry: ExperienceEntry) => {
+
+    const header = (exp: Experience) => {
+        return (<>
+            <h4 className="text-primary">
+                <b>{exp.org.shortname}</b>&emsp;
+                <small className="text-muted"><b>{exp.org.fullname}</b></small>
+            </h4> 
+            <h5>
+                &emsp;<b>{exp.title}</b>
+                &emsp;<small className="text-muted">
+                {monthNames[exp.period.start.getMonth()]} {exp.period.start.getFullYear()} - {monthNames[exp.period.end.getMonth()]} {exp.period.end.getFullYear()}
+                </small>
+            </h5>
+        </>)
+    }
+
+    const content = (exp: Experience) => {
+        return ( <p>&emsp;&emsp;{exp.description}</p> )
+    }
+
     return (
         <>
         <h3>Experience</h3>
         {entry.experiences?.map((exp, index) => {
             return (
-                <>
-                <div className={styles.buttonContainer} key={index}>
-                    <h4 className="text-primary">
-                        <b>{exp.org.shortname}</b>&emsp;
-                        <small key={index} className="text-muted"><b>{exp.org.fullname}</b></small>
-                    </h4> 
-                    <h5>
-                        &emsp;<b>{exp.title}</b>
-                        &emsp;<small key={index} className="text-muted">
-                        {monthNames[exp.period.start.getMonth()]} {exp.period.start.getFullYear()} - {monthNames[exp.period.end.getMonth()]} {exp.period.end.getFullYear()}
-                        </small>
-                    </h5>
-                    <p>&emsp;&emsp;{exp.description}</p>
+                <div key={index}>
+                    <ButtonLayout header={header(exp)} content={content(exp)}/>
                 </div>
-                </>
             )
         })}
         </>
