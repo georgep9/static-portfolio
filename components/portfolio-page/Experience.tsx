@@ -34,7 +34,7 @@ const Experience = (entry: ExperienceEntry) => {
 
     return (
         <>
-        <h3>Experience</h3>
+        <h4>Industry</h4>
         {entry.experiences?.map((exp, index) => {
             return (
                 <div key={index}>

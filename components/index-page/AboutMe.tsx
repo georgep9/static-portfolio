@@ -1,15 +1,26 @@
 import { NextPage } from "next"
+import Image from 'next/image'
+
 
 const AboutMe : NextPage = (props) => {
   return (
     <>
-      <h3>
-        George Patterson - <small className="text-primary">Software Engineer</small>
-      </h3>
-      <p>
-        My passion and interest for technology, and how we use it to create solutions on top of existing accomplishments, continues to motivate me as a software engineer. Developing code to improve the productivity and quality of everyday life.
+      <h4>
+        &emsp;Welcome to my portfolio 👋
+      </h4>
+      <p className="text-muted">
+        A personal showcase of my projects, academia, and industry experiences.
       </p>
-      <p>
+      <h4>
+        About me
+      </h4>
+      <h5 >
+        &emsp;George Patterson&emsp;<b className="text-primary">Junior Software Engineer</b>&emsp;👨‍💻
+      </h5>
+      <p className="text-muted">
+        My passion for technology and computer science, fuelled with a thurst for knowledge, continues to motivate me towards software engineering. Developing to improve the productivity and quality of everyday life.
+      </p>
+      <p className="text-muted">
         University knowledge and industry experiences in embedded systems, computer science, web development, and distributed-decentralised systems has bootstrapped my early career with strong foundational skills. I now specialise in full-stack development and cloud as a graduate engineer.
       </p>
       <p>

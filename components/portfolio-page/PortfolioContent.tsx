@@ -9,7 +9,7 @@ const experiences : ExperienceEntry = {
       fullname: "iDU Identification",
       shortname: "IDU"
     },
-    title: "Junior Software Developer",
+    title: "Junior Software Engineer",
     period: {
       start: new Date("2022-07"),
       end: new Date("2022-09")
@@ -115,8 +115,8 @@ const qut : AcademiaEntry = {
 const PortfolioContent : NextPage = () => {
   return (
     <>
-      <Academia {...qut}/>
       <Experience {...experiences}/>
+      <Academia {...qut}/>
     </>
   )
 }

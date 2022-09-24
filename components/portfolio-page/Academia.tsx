@@ -11,7 +11,7 @@ const Academia = (entry: AcademiaEntry) => {
 
     return (
         <>
-            <h3>Academia</h3>
+            <h4>Academia</h4>
             {entry.education?.map((edu, index) => (
                 <div key={index} className={styles.buttonContainer}>
                     <h4 className="text-primary"><b>{edu.institution.fullname} ({edu.institution.shortname})</b></h4>
