@@ -11,6 +11,7 @@ function MyApp({Component, ...props} : Props) {
         <>
           <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>portfolio · geopat.io / georgep9</title>
           </Head>
           <Component/>
         </>

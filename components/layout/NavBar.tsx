@@ -9,7 +9,7 @@ const NavBar = () => {
                     <ul className="navbar-nav mx-md-auto">
                         
                         <Link href="/">
-                            <a className="navbar-brand">🧑‍💻 geopat.io / georgep9</a>
+                            <a className="navbar-brand">👨‍💻 geopat.io / georgep9</a>
                         </Link>
                         <li className="nav-item">
                             <Link href="/portfolio">
