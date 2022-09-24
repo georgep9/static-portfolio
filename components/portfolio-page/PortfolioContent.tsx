@@ -1,4 +1,6 @@
 import { NextPage } from "next"
+import Link from "next/link"
+import Button from "../commons/Button"
 import Academia, { AcademiaEntry } from "./Academia"
 import Experience, { ExperienceEntry } from "./Experience"
 
@@ -117,6 +119,9 @@ const PortfolioContent : NextPage = () => {
     <>
       <Experience {...experiences}/>
       <Academia {...qut}/>
+      <Link href="/contact">
+        <a><Button label="Reach ☕"/></a>
+      </Link>
     </>
   )
 }

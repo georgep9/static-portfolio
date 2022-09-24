@@ -10,9 +10,6 @@ export type ExperienceEntry = {
 const Experience = (entry: ExperienceEntry) => {
 
     const header = (exp: Experience) => {
-
-        const skillLabels: String[] | undefined = exp.skills?.labels
-
         return (<>
             <h4 className="text-primary">
                 <b>{exp.org.shortname}</b>&emsp;
@@ -21,15 +18,18 @@ const Experience = (entry: ExperienceEntry) => {
             <h5>
                 &emsp;<b>{exp.title}</b>
             </h5>
-            &emsp;<small className="text-muted">
+            &emsp;&emsp;<small className="text-muted">
                 {monthNames[exp.period.start.getMonth()]} {exp.period.start.getFullYear()} - {monthNames[exp.period.end.getMonth()]} {exp.period.end.getFullYear()}
-            </small>&emsp;
-            <Badges labels={skillLabels}/>
+            </small>
         </>)
     }
 
     const content = (exp: Experience) => {
-        return ( <p>&emsp;&emsp;{exp.description}</p> )
+        const skillLabels: String[] | undefined = exp.skills?.labels
+        return <>
+            <p>&emsp;&emsp;{exp.description}</p>
+            <Badges labels={skillLabels}/>
+        </>
     }
 
     return (

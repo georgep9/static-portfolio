@@ -1,15 +1,15 @@
 import type { NextPage } from 'next'
-import Index from '../components/index-page/Index'
+import AboutPage from '../components/about-page/AboutPage'
 import Layout from '../components/layout/Layout'
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
       <Layout>
-        <Index />
+        <AboutPage />
       </Layout>
     </>
   )
 }
 
-export default Home
+export default About

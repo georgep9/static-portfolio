@@ -9,7 +9,7 @@ const Picture = ({src, alt}: Props) => {
 
     return (<>
         <div className={styles.pictureContainer}>
-            <img className="rounded mx-auto d-block" src={src.toString()} alt={alt.toString()} style={{width: "50%", height: "auto"}}/>
+            <img className="rounded mx-auto d-block" src={src.toString()} alt={alt.toString()} style={{minWidth: "100%", minHeight: "100%", objectFit: "cover"}}/>
         </div>
     </>)
 
