@@ -7,6 +7,10 @@ export type TimeFrame = {
     end: Date
 }
 
+export type Skills = {
+    labels: String[]
+}
+
 export type Institution = {
     fullname: String
     shortname?: String
@@ -26,20 +30,6 @@ export type Project = {
     description?: String
 }
 
-export type Education = {
-    institution: Institution
-    course: Course
-    grade?: String
-    description?: String
-}
-
-export type Research = {
-    institution: Institution
-    project: Project
-    type: String
-    period?: TimeFrame
-}
-
 export type Experience = {
     org: Institution
     title: String
@@ -47,4 +37,20 @@ export type Experience = {
     description: String
     projects?: Project[]
     courses?: Course[]
+    skills?: Skills
+}
+export type Education = {
+    institution: Institution
+    course: Course
+    grade?: String
+    description?: String
+    skills?: Skills
+}
+
+export type Research = {
+    institution: Institution
+    project: Project
+    type: String
+    period?: TimeFrame
+    skills?: Skills
 }

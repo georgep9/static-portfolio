@@ -14,7 +14,10 @@ const experiences : ExperienceEntry = {
       start: new Date("2022-07"),
       end: new Date("2022-09")
     },
-    description: "Full-stack development and debugging of features for a suite of real-time ID scanning solutions. AWS lead in provisioning and migrating SaaS from Google's firebase to AWS. Collaborating with key stake-holders in handover process for vertical software."
+    description: "Full-stack development and debugging of features for a suite of real-time ID scanning solutions. AWS lead in provisioning and migrating SaaS from Google's firebase to AWS. Collaborating with key stake-holders in handover process for vertical software.",
+    skills: {
+      labels: ["typescript", "nextjs", "nodejs", "AWS", "REST API"]
+    }
   },
   {
     org: {
@@ -26,7 +29,10 @@ const experiences : ExperienceEntry = {
       start: new Date("2021-12"),
       end: new Date("2022-06")
     },
-    description: "Graduate responsible for maintaining and developing features around blockchain protocol algorithms and cryptographic signing modules. These are used to support ConsenSys' enterprise friendly Ethereum clients Besu and Teku."
+    description: "Graduate responsible for maintaining and developing features around blockchain protocol algorithms and cryptographic signing modules. These are used to support ConsenSys' enterprise friendly Ethereum clients Besu and Teku.",
+    skills: {
+      labels: ["Java", "AWS", "Blockchain", "Protocols"]
+    }
   },
   {
     org: {
@@ -38,7 +44,10 @@ const experiences : ExperienceEntry = {
       start: new Date("2021-06"),
       end: new Date("2021-11")
     },
-    description: "Developing and supporting the provision of AWS micro-services for the SaaS platform Ascendon, a cloud-native solution for real-time online charging. Previously a winter intern, refactoring scripts for the infrastructure support team to improve performances and provide features for internal software."
+    description: "Developing and supporting the provision of AWS micro-services for the SaaS platform Ascendon, a cloud-native solution for real-time online charging. Previously a winter intern, refactoring scripts for the infrastructure support team to improve performances and provide features for internal software.",
+    skills: {
+      labels: ["C#", ".NET", "Perl", "serverless", "AWS"]
+    }
   },
   {
     org: {
@@ -50,7 +59,10 @@ const experiences : ExperienceEntry = {
       start: new Date("2021-03"),
       end: new Date("2021-06")
     },
-    description: "Academic tutor for software engineering honours course Embedded Systems (EGH456)."
+    description: "Academic tutor for software engineering honours course Embedded Systems (EGH456).",
+    skills: {
+      labels: ["C", "TI-RTOS", "embedded systems"]
+    }
   },
   {
     org: {
@@ -62,7 +74,10 @@ const experiences : ExperienceEntry = {
       start: new Date("2020-12"),
       end: new Date("2021-02")
     },
-    description: "Researched and presented strategies to support Navy hydrographic capability to address and mitigate the threats associated with the rapidly evolving landscape of cybersecurity"
+    description: "Researched and presented strategies to support Navy hydrographic capability to address and mitigate the threats associated with the rapidly evolving landscape of cybersecurity",
+    skills: {
+      labels: ["Systems Engineering", "Operations", "IT security"]
+    }
   }]
 }
 
@@ -76,7 +91,11 @@ const qut : AcademiaEntry = {
         fullname: "Bachelor of Engineering",
         level: "Honours IIA",
         major: "Computer and Software Systems",
-        minors: ["IT Breadth", "Software Engineering"]
+        minors: ["IT Breadth", "Software Engineering"],
+        period: {
+          start: new Date("2018-02"),
+          end: new Date("2021-12")
+        },
     },
     grade: "6.09"
     }],
@@ -96,8 +115,8 @@ const qut : AcademiaEntry = {
 const PortfolioContent : NextPage = () => {
   return (
     <>
-      <Experience {...experiences}/>
       <Academia {...qut}/>
+      <Experience {...experiences}/>
     </>
   )
 }
