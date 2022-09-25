@@ -1,7 +1,6 @@
 import { Education, Research } from "../commons/types"
-import styles from '../layout.module.css';
-import { monthNames } from "../commons/types";
-import ButtonLayout from "../layout/ButtonLayout";
+import { monthNames } from "../commons/types"
+import ButtonLayout from "../layout/ButtonLayout"
 
 export type AcademiaEntry = {
     education?: Education[]
@@ -20,17 +19,17 @@ const Academia = (entry: AcademiaEntry) => {
                     [{edu.course.level}]
                     </small> : null}
             </h5>
-            &emsp;<small className="text-muted">
-                {(edu.course.period) ? <>
-                {monthNames[edu.course.period.start.getMonth()]} {edu.course.period.start.getFullYear()} - 
-                {monthNames[edu.course.period.end.getMonth()]} {edu.course.period.end.getFullYear()}
-                </> : null}
-            </small>
         </>)
     }
 
     const eduContent = (edu: Education) => {
         return (<>
+            <small className="text-muted">
+                {(edu.course.period) ? <>
+                {monthNames[edu.course.period.start.getMonth()]} {edu.course.period.start.getFullYear()} - 
+                {monthNames[edu.course.period.end.getMonth()]} {edu.course.period.end.getFullYear()}
+                </> : null}
+            </small><br></br>
             &emsp;&emsp;<small className="text-muted">Major: </small><br></br>
             &emsp;&emsp;&emsp;{edu.course.major}<br></br>
             &emsp;&emsp;<small className="text-muted">Minors:</small><br></br>

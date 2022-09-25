@@ -3,6 +3,8 @@ import Link from "next/link"
 import Button from "../commons/Button"
 import Academia, { AcademiaEntry } from "./Academia"
 import Experience, { ExperienceEntry } from "./Experience"
+import ButtonLayout from "../layout/ButtonLayout"
+
 
 const experiences : ExperienceEntry = {
   experiences: 
@@ -115,10 +117,35 @@ const qut : AcademiaEntry = {
 }
 
 const PortfolioContent : NextPage = () => {
+
+  const expHeader = () => {
+    return (<>
+      <h4 className="text-center">Industry 💼</h4>
+    </>)
+  }
+
+  const expContent = () => {
+    return (<>
+      <Experience {...experiences}/>
+    </>)
+  }
+
+  const acedemiaHeader = () => {
+    return (<>
+      <h4 className="text-center">Academia 🎓</h4>
+    </>)
+  }
+
+  const acedemiaContent = () => {
+    return (<>
+      <Academia {...qut}/>
+    </>)
+  }
+
   return (
     <>
-      <Experience {...experiences}/>
-      <Academia {...qut}/>
+      <ButtonLayout header={expHeader()} content={expContent()}/>
+      <ButtonLayout header={acedemiaHeader()} content={acedemiaContent()}/>
       <Link href="/contact">
         <a><Button label="Reach ☕"/></a>
       </Link>

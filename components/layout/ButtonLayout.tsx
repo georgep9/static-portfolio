@@ -17,8 +17,10 @@ const ButtonLayout = ({header, content}: Props) => {
 
   return (
     <>
-      <div className={styles.buttonContainer} onClick={handleClick}>
-        {header}
+      <div className={styles.buttonContainer}>
+        <div className={styles.buttonHeader} onClick={handleClick}>
+          {header}
+        </div>
         {isShowing && <>
           <div className={styles.buttonContent}>
             {content}

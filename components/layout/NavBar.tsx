@@ -18,7 +18,7 @@ const NavBar = () => {
                         </li>
                         <li>
                             <Link href="/portfolio">
-                                <a><Button label="Portfolio 💼"/></a>
+                                <a><Button label="Portfolio 📜"/></a>
                             </Link>
                         </li>
                         <li>
