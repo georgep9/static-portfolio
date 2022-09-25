@@ -1,6 +1,5 @@
 import Link from "next/link"
-import Button from "../commons/Button"
-
+import Button from "../elements/Button"
 
 const NavBar = () => {
     return (
@@ -13,17 +12,17 @@ const NavBar = () => {
                     <ul className="navbar-nav ms-auto">
                         <li>
                             <Link href="/about">
-                                <a><Button label="About Me 👨‍💻"/></a>
+                                <a><Button label="👨‍💻"/></a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/portfolio">
-                                <a><Button label="Portfolio 📜"/></a>
+                                <a><Button label="🗂️"/></a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/contact">
-                                <a><Button label="Reach ☕"/></a>
+                                <a><Button label="☕"/></a>
                             </Link>
                         </li>
                     </ul>

@@ -5,14 +5,14 @@ const badgeClassNames = [
 ]
 
 interface Props {
-    labels: Array<String> | undefined
+    labels: Array<String | undefined> | undefined
 }
 
 const Badges = ({labels} : Props) => {
     return (<>
         {labels? labels.map((label, index) => {
             return (<>
-                <span className={badgeClassNames[index % badgeClassNames.length]}><b>{label}</b></span>&ensp;
+                <span className={badgeClassNames[index % badgeClassNames.length]} key={index}><b>{label}</b></span>&ensp;
             </>)
         }) : null}
     </>)

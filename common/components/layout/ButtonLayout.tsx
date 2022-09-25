@@ -1,13 +1,14 @@
 import React, { ReactElement } from "react";
 import { useState } from "react";
-import styles from '../layout.module.css';
+import styles from '../styles/layout.module.css';
 
 interface Props {
   header: ReactElement,
-  content: ReactElement
+  content: ReactElement,
+  toggleContent?: ReactElement
 }
 
-const ButtonLayout = ({header, content}: Props) => {
+const ButtonLayout = ({header, content, toggleContent}: Props) => {
 
   const [isShowing, setIsShowing] = useState(false);
 
@@ -20,6 +21,7 @@ const ButtonLayout = ({header, content}: Props) => {
       <div className={styles.buttonContainer}>
         <div className={styles.buttonHeader} onClick={handleClick}>
           {header}
+          {!isShowing && toggleContent}
         </div>
         {isShowing && <>
           <div className={styles.buttonContent}>

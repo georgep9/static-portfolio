@@ -1,9 +1,10 @@
 import { NextPage } from "next"
 import Link from "next/link"
-import Button from "../commons/Button"
+import Button from "../elements/Button"
 import Academia, { AcademiaEntry } from "./Academia"
 import Experience, { ExperienceEntry } from "./Experience"
 import ButtonLayout from "../layout/ButtonLayout"
+import Skills from "./Skills"
 
 
 const experiences : ExperienceEntry = {
@@ -20,7 +21,7 @@ const experiences : ExperienceEntry = {
     },
     description: "Full-stack development and debugging of features for a suite of real-time ID scanning solutions. AWS lead in provisioning and migrating SaaS from Google's firebase to AWS. Collaborating with key stake-holders in handover process for vertical software.",
     skills: {
-      labels: ["typescript", "nextjs", "nodejs", "AWS", "REST API"]
+      labels: ["Typescript", "Next.js", "Node.js", "REST API", "AWS"]
     }
   },
   {
@@ -65,7 +66,7 @@ const experiences : ExperienceEntry = {
     },
     description: "Academic tutor for software engineering honours course Embedded Systems (EGH456).",
     skills: {
-      labels: ["C", "TI-RTOS", "embedded systems"]
+      labels: ["C", "TI-RTOS", "Embedded Systems"]
     }
   },
   {
@@ -124,6 +125,12 @@ const PortfolioContent : NextPage = () => {
     </>)
   }
 
+  const expSkills = () => {
+    return (<>
+      <Skills skills={experiences.experiences} />
+    </>)
+  }
+
   const expContent = () => {
     return (<>
       <Experience {...experiences}/>
@@ -136,6 +143,12 @@ const PortfolioContent : NextPage = () => {
     </>)
   }
 
+  const acedemiaSkills = () => {
+    return (<>
+      <Skills skills={qut.education} />
+    </>)
+  }
+
   const acedemiaContent = () => {
     return (<>
       <Academia {...qut}/>
@@ -144,7 +157,7 @@ const PortfolioContent : NextPage = () => {
 
   return (
     <>
-      <ButtonLayout header={expHeader()} content={expContent()}/>
+      <ButtonLayout header={expHeader()} content={expContent()} toggleContent={expSkills()}/>
       <ButtonLayout header={acedemiaHeader()} content={acedemiaContent()}/>
       <Link href="/contact">
         <a><Button label="Reach ☕"/></a>

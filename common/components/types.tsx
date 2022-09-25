@@ -54,3 +54,5 @@ export type Research = {
     period?: TimeFrame
     skills?: Skills
 }
+
+export type SkillType = Experience | Education | Research

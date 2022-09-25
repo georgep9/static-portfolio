@@ -1,10 +1,10 @@
-import { Education, Research } from "../commons/types"
-import { monthNames } from "../commons/types"
+import { Education, Research } from "../types"
+import { monthNames } from "../types"
 import ButtonLayout from "../layout/ButtonLayout"
 
 export type AcademiaEntry = {
-    education?: Education[]
-    research?: Research[]
+    education: Education[]
+    research: Research[]
 }
 
 const Academia = (entry: AcademiaEntry) => {

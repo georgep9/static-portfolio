@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
-import Layout from '../components/layout/Layout'
+import ReachMe from '../common/components/contact-page/ReachMe'
+import Layout from '../common/components/layout/Layout'
 
 const Contact: NextPage = () => {
   return (
     <>
       <Layout>
-        <h3>Reach out to me via...</h3>
+        <ReachMe />
       </Layout>
     </>
   )
