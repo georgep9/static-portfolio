@@ -8,9 +8,10 @@ export type TimeFrame = {
 }
 
 export type ImgProps = {
-    src: String,
-    alt: String,
-    href: String
+    src: string,
+    alt: string,
+    href: string,
+    desc?: String | undefined
 }
 
 export type Skills = {
@@ -35,7 +36,7 @@ export type Project = {
     title: String
     srcTitle: String
     imgProps: ImgProps
-    description?: String
+    description: String
     skills?: Skills
 }
 

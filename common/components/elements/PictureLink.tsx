@@ -1,11 +1,20 @@
 import styles from '../styles/layout.module.css';
 import { ImgProps } from '../types';
 
-
-const PictureLink = ({src, alt, href}: ImgProps) => {
-    return (<>
+const PictureLink = (imgProps : ImgProps) => {
+    return (<> 
         <div className={styles.pictureContainer}>
-            <a href={`${href}`} target="_blank" rel="noreferrer"><img className="rounded mx-auto d-block" src={src.toString()} alt={alt.toString()} style={{width: "100%", height: "auto"}}/></a>
+            <a href={`${imgProps.href}`} target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                <img 
+                    className="mx-auto d-block" 
+                    src={imgProps.src} 
+                    alt={imgProps.alt} 
+                    style={{
+                        width: "100%", 
+                        height: "auto",
+                    }}/>
+                <p className="text-success">{imgProps.desc}</p>
+            </a>
         </div>
     </>)
 }
