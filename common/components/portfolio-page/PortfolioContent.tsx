@@ -5,7 +5,24 @@ import Academia, { AcademiaEntry } from "./Academia"
 import Experience, { ExperienceEntry } from "./Experience"
 import ButtonLayout from "../layout/ButtonLayout"
 import Skills from "./Skills"
+import Projects, { ProjectsEntry } from "./Projects"
 
+const projects : ProjectsEntry = {
+  projects:
+  [{
+    srcTitle: "georgep9 / uav-webvis",
+    title: "UAVPayload-Visualization",
+    description: "RESTful web interface for visualizing air quality and image processing data.",
+    imgProps: {
+      src: './uav-webvis.png',
+      alt: 'uav-webvis',
+      href: 'https://github.com/georgep9/uav-webvis'
+    },
+    skills: {
+      labels: ["Vue", "Python", "Javascript", "Docker", "AWS", "NGINX"]
+    }
+  }]
+}
 
 const experiences : ExperienceEntry = {
   experiences: 
@@ -111,13 +128,40 @@ const qut : AcademiaEntry = {
     },
     project: {
         title: "Deep Reinforcement Learning for Robotic Bin Packing",
-        description: "Research project for QUT's industry partner Dorabot. Utilizes OpenAI's spinningup in RL to solve the robotic bin packing problem in warehouse logistics."
+        srcTitle: "OpenAI DRL for bin packing",
+        description: "Research project for QUT's industry partner Dorabot. Utilizes OpenAI's spinningup in RL to solve the robotic bin packing problem in warehouse logistics.",
+        imgProps: {
+          src: "./drl-binpacking.gif",
+          alt: "drl-binpacking",
+          href: "https://spinningup.openai.com/en/latest/"
+        }
     },
-    type: "Honours Thesis"
+    type: "Honours Thesis",
+    skills: {
+      labels: ["OpenAI", "Python", "Machine Learning", "Deep RL", "Robotics"]
+    }
   }]
 }
 
 const PortfolioContent : NextPage = () => {
+
+  const projHeader = () => {
+    return (<>
+      <h4 className="text-center">Side projects 🤖</h4>
+    </>)
+  }
+
+  const projSkills = () => {
+    return (<>
+      <Skills skills={projects.projects} />
+    </>)
+  }
+
+  const projContent = () => {
+    return (<>
+      <Projects {...projects} />
+    </>)
+  }
 
   const expHeader = () => {
     return (<>
@@ -145,7 +189,7 @@ const PortfolioContent : NextPage = () => {
 
   const acedemiaSkills = () => {
     return (<>
-      <Skills skills={qut.education} />
+      <Skills skills={qut.research} />
     </>)
   }
 
@@ -157,8 +201,9 @@ const PortfolioContent : NextPage = () => {
 
   return (
     <>
+      <ButtonLayout header={projHeader()} content={projContent()} toggleContent={projSkills()}/>
+      <ButtonLayout header={acedemiaHeader()} content={acedemiaContent()} toggleContent={acedemiaSkills()}/>
       <ButtonLayout header={expHeader()} content={expContent()} toggleContent={expSkills()}/>
-      <ButtonLayout header={acedemiaHeader()} content={acedemiaContent()}/>
       <Link href="/contact">
         <a><Button label="Reach ☕"/></a>
       </Link>

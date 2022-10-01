@@ -7,6 +7,12 @@ export type TimeFrame = {
     end: Date
 }
 
+export type ImgProps = {
+    src: String,
+    alt: String,
+    href: String
+}
+
 export type Skills = {
     labels: String[]
 }
@@ -27,7 +33,10 @@ export type Course = {
 
 export type Project = {
     title: String
+    srcTitle: String
+    imgProps: ImgProps
     description?: String
+    skills?: Skills
 }
 
 export type Experience = {
@@ -55,4 +64,4 @@ export type Research = {
     skills?: Skills
 }
 
-export type SkillType = Experience | Education | Research
+export type SkillType = Experience | Education | Research | Project

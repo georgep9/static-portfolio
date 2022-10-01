@@ -1,6 +1,8 @@
 import { Education, Research } from "../types"
 import { monthNames } from "../types"
 import ButtonLayout from "../layout/ButtonLayout"
+import ProjectLink from "../elements/ProjectLink"
+import Skills from "./Skills"
 
 export type AcademiaEntry = {
     education: Education[]
@@ -50,18 +52,18 @@ const Academia = (entry: AcademiaEntry) => {
         return (<>
             <h4 className="text-primary"><b>{res.project.title}</b>&emsp;<small className="text-muted">[{res.type}]</small></h4>
             <h5>&emsp;{res.institution.fullname} ({res.institution.shortname})</h5>
+            <Skills skills={[res]}/>
         </>)
     }
 
     const resContent = (res: Research) => {
         return (<>
-            &emsp;&emsp;{res.project.description}
+            <ProjectLink {...res.project}/>
         </>)
     }
 
     return (
         <>
-            <h4>Academia</h4>
             {entry.education?.map((edu, index) => (
                 <ButtonLayout key={index} header={eduHeader(edu)} content={eduContent(edu)} />
             ))}
