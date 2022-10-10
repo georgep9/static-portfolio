@@ -8,7 +8,7 @@ const headshotImgProps : ImgProps = {
   src: './prof_head.jpg',
   alt: 'me',
   href: '',
-  desc: 'Aspiring nomadic developer whos thirsty for knowledge :))'
+  desc: 'Aspiring nomadic developer with a thirst for knowledge :)'
 }
 
 const AboutPage = () => {
