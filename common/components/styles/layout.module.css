@@ -2,9 +2,11 @@
   max-width: 36rem;
   padding: 1rem 1rem;
   margin: 1.5rem auto 2rem;
+
   }
 
 .buttonContainer {
+  background-color: rgb(48, 48, 48);
   padding: 1rem 1rem;
   margin: 1rem auto 1rem;
   border-radius: 20px;
@@ -20,7 +22,7 @@
 }
 
 .pictureContainer {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #303030;
   border-radius: 20px;
   margin: 0.5rem auto 0.5rem;
@@ -40,6 +42,6 @@
 .smallButton {
   display: inline-block;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }

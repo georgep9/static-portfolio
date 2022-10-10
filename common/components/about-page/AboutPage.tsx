@@ -1,15 +1,23 @@
 import Link from 'next/link';
 import Button from '../elements/Button';
+import { Picture } from '../elements/PictureLink';
 import ButtonLayout from "../layout/ButtonLayout"
+import { ImgProps } from '../types';
 
+const headshotImgProps : ImgProps = {
+  src: './prof_head.jpg',
+  alt: 'me',
+  href: '',
+  desc: 'Aspiring nomadic developer whos thirsty for knowledge :))'
+}
 
 const AboutPage = () => {
 
   const aboutHeader = () => {
     return (<>
-      <h5 className="text-center">Hi, I'm George Patterson</h5>
-      <img className="rounded mx-auto d-block"  src='./prof_head.jpg' alt='me' style={{width: "50%", height: "auto"}}/>
-      <div className="text-center"><b className="text-primary">Graduate Software Engineer from Brisbane 👨‍💻</b></div>
+      <h5 className="text-center">Hey 👋 I'm George Patterson</h5>
+      <Picture {...headshotImgProps}/>
+      <div className="text-center"><b className="text-info">Graduate Software Engineer from Brisbane 👨‍💻</b></div>
     </>)
   }
 
