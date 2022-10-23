@@ -15,7 +15,7 @@ const AboutPage = () => {
 
   const aboutHeader = () => {
     return (<>
-      <h5 className="text-center">Hey 👋 I'm George Patterson</h5>
+      <h5 className="text-center">Hey 👋 im Georgep9</h5>
       <Picture {...headshotImgProps}/>
       <div className="text-center"><b className="text-info">Graduate Software Engineer from Brisbane 👨‍💻</b></div>
     </>)

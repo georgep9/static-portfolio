@@ -24,10 +24,9 @@ const ButtonLayout = ({header, content, toggleContent}: Props) => {
           {!isShowing && toggleContent}
         </div>
         {isShowing && <>
-          <div className={styles.buttonContent}>
-            {content}
-            </div>
-        </>}
+        <div className={styles.buttonContent}>
+          {content}
+        </div></>}
       </div>
     </>
   );
