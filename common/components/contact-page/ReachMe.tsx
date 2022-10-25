@@ -27,7 +27,7 @@ const ReachMe = () => {
             <PictureLink {...githubLinkProps}/>
             <PictureLink {...coffeeLinkProps}/>
         </div>
-        <Link href="/"><a><Button label="/"/></a></Link>
+        <Link href="/"><a><Button label="home"/></a></Link>
     </>)
 }
 

@@ -42,7 +42,10 @@ const AboutPage = () => {
     <>
       <ButtonLayout header={aboutHeader()} content={aboutContent()}/>
       <Link href="/portfolio">
-        <a><Button label="Portfolio 🗂️"/></a>
+        <a><Button label="🗂️ Portfolio"/></a>
+      </Link>
+      <Link href="/contact">
+        <a><Button label="☕"/></a>
       </Link>
     </>
   )

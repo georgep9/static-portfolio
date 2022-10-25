@@ -205,7 +205,7 @@ const PortfolioContent : NextPage = () => {
       <ButtonLayout header={acedemiaHeader()} content={acedemiaContent()} toggleContent={acedemiaSkills()}/>
       <ButtonLayout header={expHeader()} content={expContent()} toggleContent={expSkills()}/>
       <Link href="/contact">
-        <a><Button label="Reach ☕"/></a>
+        <a><Button label="☕ Reach Me"/></a>
       </Link>
     </>
   )

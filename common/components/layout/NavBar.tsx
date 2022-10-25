@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
             <div className="container-fluid ">
                     <Link href="/">
-                        <a><Button label="portfolio.geopat.io"/></a>
+                        <a><Button label="index"/></a>
                     </Link>
                     <ul className="navbar-nav ms-auto">
                         <li>
