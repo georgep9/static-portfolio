@@ -16,7 +16,7 @@ const AboutPage = () => {
   const aboutHeader = () => {
     return (<>
       <h5 className="text-center">Hey 👋 I&apos;m George Patterson</h5>
-      <div className="text-center"><b className="text-info">Graduate Software Engineer from Brisbane 🇦🇺 👨‍💻</b></div>
+      <div className="text-center"><b className="text-info">👨‍💻 Graduate Software Engineer from Brisbane 🇦🇺</b></div>
     </>)
   }
 
@@ -24,16 +24,16 @@ const AboutPage = () => {
     return (<>
       <Picture {...headshotImgProps}/>
       <p className="text-muted">
-        Curiously and passionately developing code from a young age, from low-level C pointers up to AWS microservices.
+        Curiously and passionately developing code from early on, from low-level C pointers up to AWS microservices.
       </p>
       <p className="text-muted">
-        University knowledge and industry experiences in embedded systems, computer science, web development, and distributed-decentralised systems has bootstrapped my early career with a wide breadth of skills.
+        Uni knowledge and industry experiences in embedded systems, computer science, web development, and DLT has bootstrapped my early career with a wide breadth of skills.
       </p>
       <p>
-        I now focus & specialise in full-stack development as a graduate engineer. Although my profressional stack is yet to be determined 😛
+        I now focus & specialise in full-stack cloud development as a graduate engineer. Although my profressional stack is yet to be determined 😛
       </p>
       <p className="text-muted">
-        Feel free to check out some of my github projects and contributions @ <a href="https://github.com/georgep9">github.com/georgep9</a>
+        Feel free to check out some of my personal github projects and contributions @ <a href="https://github.com/georgep9">github.com/georgep9</a>
       </p>
     </>)
   }

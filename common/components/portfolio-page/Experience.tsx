@@ -15,7 +15,6 @@ const Experience = (entry: ExperienceEntry) => {
                 <b>{exp.org.shortname}</b>&emsp;
                 <small className="text-muted"><b>{exp.org.fullname}</b></small>
             </h4>
-            <Skills skills={[exp]}/>
         </>)
     }
 
@@ -26,6 +25,7 @@ const Experience = (entry: ExperienceEntry) => {
                 {monthNames[exp.period.start.getMonth()]} {exp.period.start.getFullYear()} - {monthNames[exp.period.end.getMonth()]} {exp.period.end.getFullYear()}
             </small>
             <p>&emsp;&emsp;{exp.description}</p>
+            <Skills skills={[exp]}/>
         </>
     }
 
@@ -34,7 +34,10 @@ const Experience = (entry: ExperienceEntry) => {
         {entry.experiences?.map((exp, index) => {
             return (
                 <div key={index}>
-                    <ButtonLayout header={expHeader(exp)} content={expContent(exp)}/>
+                    <ButtonLayout 
+                    header={expHeader(exp)} 
+                    content={expContent(exp)} 
+                    toggleContent={<Skills skills={[exp]}/>}/>
                 </div>
             )
         })}

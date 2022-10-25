@@ -52,13 +52,14 @@ const Academia = (entry: AcademiaEntry) => {
         return (<>
             <h4 className="text-primary"><b>{res.project.title}</b>&emsp;<small className="text-muted">[{res.type}]</small></h4>
             <h5>&emsp;{res.institution.fullname} ({res.institution.shortname})</h5>
-            <Skills skills={[res]}/>
         </>)
     }
 
     const resContent = (res: Research) => {
         return (<>
             <ProjectLink {...res.project}/>
+            <br/>
+            <Skills skills={[res]}/>
         </>)
     }
 
@@ -68,7 +69,11 @@ const Academia = (entry: AcademiaEntry) => {
                 <ButtonLayout key={index} header={eduHeader(edu)} content={eduContent(edu)} />
             ))}
             {entry.research?.map((res, index) => (
-                <ButtonLayout key={index} header={resHeader(res)} content={resContent(res)} />
+                <ButtonLayout key={index} 
+                header={resHeader(res)} 
+                content={resContent(res)} 
+                toggleContent={<Skills skills={[res]}/>}
+                />
             ))}
         </>
     )

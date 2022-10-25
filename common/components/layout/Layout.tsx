@@ -8,9 +8,14 @@ interface Props {
 
 export const Footer = () => {
   return (
-    <div>
-      {'> © George Patterson 2022'} 
-    </div>
+    <>
+      <button className="btn btn-secondary disabled">
+        {'> © George Patterson 2022'}
+      </button><br/><br/>
+      <button className="btn btn-dark disabled">
+        {'> developed with Next.js (Bootstrapped with Darkly)'}<br/>
+      </button><br/>
+    </>
   )
 };
 
