@@ -4,7 +4,7 @@ import Button from "../elements/Button"
 const NavBar = () => {
     return (
       <>
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
             <div className="container-fluid ">
                     <Link href="/">
                         <a><Button label="portfolio.geopat.io"/></a>

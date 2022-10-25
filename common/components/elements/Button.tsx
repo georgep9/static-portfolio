@@ -10,7 +10,7 @@ interface Props {
 const Button = ({label} : Props) => {
     return (<>
         <div className={styles.smallButton}>
-            <button type="button" className="btn btn-dark">{label}</button>
+            <button type="button" className="btn btn-secondary">{label}</button>
         </div>
     </>)
 }

@@ -8,29 +8,32 @@ const headshotImgProps : ImgProps = {
   src: './prof_head.jpg',
   alt: 'me',
   href: '',
-  desc: 'Aspiring nomadic developer with a thirst for knowledge :)'
+  desc: 'An aspiring nomadic developer with a thirst for knowledge!'
 }
 
 const AboutPage = () => {
 
   const aboutHeader = () => {
     return (<>
-      <h5 className="text-center">Hey 👋 im Georgep9</h5>
-      <Picture {...headshotImgProps}/>
-      <div className="text-center"><b className="text-info">Graduate Software Engineer from Brisbane 👨‍💻</b></div>
+      <h5 className="text-center">Hey 👋 I&apos;m George Patterson</h5>
+      <div className="text-center"><b className="text-info">Graduate Software Engineer from Brisbane 🇦🇺 👨‍💻</b></div>
     </>)
   }
 
   const aboutContent = () => {
     return (<>
+      <Picture {...headshotImgProps}/>
       <p className="text-muted">
-        Curiously and passionately developing code, from C pointers to microservices.
+        Curiously and passionately developing code from a young age, from low-level C pointers up to AWS microservices.
       </p>
       <p className="text-muted">
-        University knowledge and industry experiences in embedded systems, computer science, web development, and distributed-decentralised systems has bootstrapped my early career with a wide breadth of skills. I now specialise in full-stack development as a graduate engineer.
+        University knowledge and industry experiences in embedded systems, computer science, web development, and distributed-decentralised systems has bootstrapped my early career with a wide breadth of skills.
       </p>
       <p>
-        Check out some of my projects and contributions @ <a href="https://github.com/georgep9">github.com/georgep9</a>
+        I now focus & specialise in full-stack development as a graduate engineer. Although my profressional stack is yet to be determined 😛
+      </p>
+      <p className="text-muted">
+        Feel free to check out some of my github projects and contributions @ <a href="https://github.com/georgep9">github.com/georgep9</a>
       </p>
     </>)
   }
