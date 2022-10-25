@@ -1,3 +1,7 @@
+`
+All copyright interest in this file written by George Patterson, pertains to the LICENSE at root.
+`
+
 import React, { ReactNode } from "react";
 import NavBar from './NavBar';
 import styles from '../styles/layout.module.css';

@@ -1,3 +1,7 @@
+`
+All copyright interest in this file written by George Patterson, pertains to the LICENSE at root.
+`
+
 import { Project } from '../types';
 import PictureLink from './PictureLink';
 

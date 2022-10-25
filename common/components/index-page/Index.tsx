@@ -1,3 +1,7 @@
+`
+All copyright interest in this file written by George Patterson, pertains to the LICENSE at root.
+`
+
 import { NextPage } from "next"
 import Link from "next/link";
 import Button from "../elements/Button";

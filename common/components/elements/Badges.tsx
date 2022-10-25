@@ -1,3 +1,7 @@
+`
+All copyright interest in this file written by George Patterson, pertains to the LICENSE at root.
+`
+
 const badgeClassNames = [
     "badge rounded-pill bg-primary",
     "badge rounded-pill bg-success",
