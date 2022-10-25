@@ -17,7 +17,7 @@ const ReachMe = () => {
     }
     const coffeeLinkProps : ImgProps = {
         src: "./buymeacoffee.svg",
-        alt: "github",
+        alt: "coffee",
         href: "https://www.buymeacoffee.com/gpatt9"
     }
     return (<>
