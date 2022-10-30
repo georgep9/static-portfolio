@@ -69,15 +69,15 @@ const Academia = (entry: AcademiaEntry) => {
 
     return (
         <>
-            {entry.education?.map((edu, index) => (
-                <ButtonLayout key={index} header={eduHeader(edu)} content={eduContent(edu)} />
-            ))}
             {entry.research?.map((res, index) => (
                 <ButtonLayout key={index} 
                 header={resHeader(res)} 
                 content={resContent(res)} 
                 toggleContent={<Skills skills={[res]}/>}
                 />
+            ))}
+            {entry.education?.map((edu, index) => (
+                <ButtonLayout key={index} header={eduHeader(edu)} content={eduContent(edu)} />
             ))}
         </>
     )

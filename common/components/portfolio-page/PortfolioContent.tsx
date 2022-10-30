@@ -40,7 +40,7 @@ const experiences : ExperienceEntry = {
       start: new Date("2022-07"),
       end: new Date("2022-09")
     },
-    description: "Full-stack development and debugging of features for a suite of real-time ID scanning solutions. AWS lead in provisioning and migrating SaaS from Google's firebase to AWS. Collaborating with key stake-holders in handover process for vertical software.",
+    description: "Full-stack development and debugging of features.",
     skills: {
       labels: ["Typescript", "Next.js", "Node.js", "REST API", "AWS"]
     }
@@ -70,7 +70,7 @@ const experiences : ExperienceEntry = {
       start: new Date("2021-06"),
       end: new Date("2021-11")
     },
-    description: "Developing and supporting the provision of AWS micro-services for the SaaS platform Ascendon, a cloud-native solution for real-time online charging. Previously a winter intern, refactoring scripts for the infrastructure support team to improve performances and provide features for internal software.",
+    description: "Supporting the provision of AWS micro-services for the SaaS platform Ascendon. Previous winter intern, refactoring scripts for the infrastructure team to provide features and optimise internal software.",
     skills: {
       labels: ["C#", ".NET", "Perl", "serverless", "AWS"]
     }
@@ -85,9 +85,9 @@ const experiences : ExperienceEntry = {
       start: new Date("2021-03"),
       end: new Date("2021-06")
     },
-    description: "Academic tutor for software engineering honours course Embedded Systems (EGH456).",
+    description: "Academic tutor for engineering course Embedded Systems (EGH456).",
     skills: {
-      labels: ["C", "TI-RTOS", "Embedded Systems"]
+      labels: ["C", "TI-RTOS", "Microcontrollers", "CPU & MCU", "Peripherils", "Embedded Systems"]
     }
   },
   {
@@ -100,7 +100,7 @@ const experiences : ExperienceEntry = {
       start: new Date("2020-12"),
       end: new Date("2021-02")
     },
-    description: "Researched and presented strategies to support Navy hydrographic capability to address and mitigate the threats associated with the rapidly evolving landscape of cybersecurity",
+    description: "Researched and presented strategies to support, address and mitigate the threats associated with the rapidly evolving landscape of cybersecurity, in the subfield of cyberworthiness.",
     skills: {
       labels: ["Systems Engineering", "Operations", "IT security"]
     }
@@ -140,7 +140,7 @@ const qut : AcademiaEntry = {
           href: "https://spinningup.openai.com/en/latest/"
         }
     },
-    type: "Honours Thesis",
+    type: "Honours Project",
     skills: {
       labels: ["OpenAI", "Python", "Machine Learning", "Deep RL", "Robotics"]
     }
@@ -205,8 +205,8 @@ const PortfolioContent : NextPage = () => {
 
   return (
     <>
-      <ButtonLayout header={projHeader()} content={projContent()} toggleContent={projSkills()}/>
       <ButtonLayout header={acedemiaHeader()} content={acedemiaContent()} toggleContent={acedemiaSkills()}/>
+      <ButtonLayout header={projHeader()} content={projContent()} toggleContent={projSkills()}/>
       <ButtonLayout header={expHeader()} content={expContent()} toggleContent={expSkills()}/>
       <Link href="/contact">
         <a><Button label="☕ Reach Me"/></a>
