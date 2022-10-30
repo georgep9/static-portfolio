@@ -10,7 +10,7 @@ const Index : NextPage = () => {
 
   return (
     <>
-      <h4>welcome! 👋 to my statically deployed portfolio</h4>
+      <h4>welcome! 👋 to my static portfolio</h4>
       <p className="text-muted">
         <b>Here you&apos;ll find a personal showcase of my academia, projects, and industry experiences.</b>
       </p>
