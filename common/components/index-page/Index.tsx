@@ -12,7 +12,7 @@ const Index : NextPage = () => {
     <>
       <h4>welcome! 👋 to my static portfolio</h4>
       <p className="text-muted">
-        <b>Here you&apos;ll find a personal showcase of my academia, projects, and industry experiences.</b>
+        <b>Here you&apos;ll find a showcase of my academia, projects, and industry experiences as a recent grad. This front-end is experimental and serves as an interactive CV.</b>
       </p>
       <Link href="/about">
         <a><Button label="👨‍💻 About Me"/></a>

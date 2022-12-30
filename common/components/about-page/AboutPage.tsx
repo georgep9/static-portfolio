@@ -9,10 +9,10 @@ import ButtonLayout from "../layout/ButtonLayout"
 import { ImgProps } from '../types';
 
 const headshotImgProps : ImgProps = {
-  src: './prof_head.jpg',
+  src: './headshot.jfif',
   alt: 'me',
   href: '',
-  desc: 'nature, tech, and in between! :)'
+  desc: '> currently learning rust'
 }
 
 const AboutPage = () => {
@@ -20,7 +20,7 @@ const AboutPage = () => {
   const aboutHeader = () => {
     return (<>
       <h5 className="text-center">Hey 👋 I&apos;m George Patterson</h5>
-      <div className="text-center"><b className="text-info">👨‍💻 Computer Software Graduate from Brisbane 🇦🇺</b></div>
+      <div className="text-center"><b className="text-info">Computer Software Graduate from Brisbane 👨‍💻</b></div>
     </>)
   }
 
@@ -28,16 +28,16 @@ const AboutPage = () => {
     return (<>
       <Picture {...headshotImgProps}/>
       <p className="text-muted">
-        Curiously and passionately developing code, from low-level pointers to cloud microservices.
+        Passionately developing code, from memory pointers to microservices.
       </p>
       <p>
-        Uni knowledge and industry experiences in embedded systems, computer science, web development, and DLT has bootstrapped my early career with a wide breadth of skills.
+        Knowledge and experience in embedded systems, cloud computing, and DLT has bootstrapped my early career with a wide breadth of skills. 
+      </p>
+      <p>
+        My profressional stack is yet to be determined 😛
       </p>
       <p className="text-muted">
-        Feel free to check out some of my personal github projects and contributions @ <a href="https://github.com/georgep9">github.com/georgep9</a>
-      </p>
-      <p>
-        I now focus & specialise as graduate software engineer. My profressional stack is yet to be determined 😛
+        Feel free to check out some of my github projects and contributions @ <a href="https://github.com/georgep9">github.com/georgep9</a>
       </p>
     </>)
   }
